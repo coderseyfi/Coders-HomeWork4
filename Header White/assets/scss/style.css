@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button, input[type=submit] {
+  cursor: pointer;
+}
+
+.about {
+  width: 100%;
+  height: 80px;
+  background-color: #252b42;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    display: none;
+  }
+}
+.about__list {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  font-size: 16px;
+}
+.about__list span {
+  margin-right: 6px;
+}
+.about__list a {
+  color: white;
+  margin-right: 6px;
+}
+
+#header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  #header {
+    display: none;
+  }
+}
+#header .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#header .container__head {
+  font-size: 22px;
+  color: rgb(31, 31, 31);
+}
+#header .container .navbar__list {
+  display: flex;
+}
+#header .container .navbar__list__item {
+  margin-right: 20px;
+}
+#header .container .navbar__list__item--link {
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+}
+#header .container__right {
+  color: rgb(46, 115, 194);
+}
+#header .container__right a {
+  margin-right: 10px;
+  cursor: pointer;
+}
+#header .container__right a {
+  color: rgb(46, 115, 194);
+}
+#header .container__right a .icon {
+  margin-right: 14px;
+}
+
+.nav-phone {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 0px 14px;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .nav-phone {
+    display: block;
+  }
+}
+.nav-phone .logo {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-phone .logo i {
+  font-size: 25px;
+}
+.nav-phone .logo p {
+  font-size: 20px;
+}
+.nav-phone .navbar {
+  text-align: center;
+}
+.nav-phone .navbar .list-phone {
+  margin-top: 30px;
+  display: none;
+  transition: 1s ease-in;
+}
+.nav-phone .navbar .list-phone .login {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.nav-phone .navbar .list-phone .bottom__area {
+  display: flex;
+  flex-direction: column;
+}
+.nav-phone .navbar .list-phone .bottom__area a {
+  margin-bottom: 10px;
+}
+.nav-phone .navbar .list-phone li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.active-bar {
+  display: block !important;
+}/*# sourceMappingURL=style.css.map */

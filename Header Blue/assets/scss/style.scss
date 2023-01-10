@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./abstracts/mixins";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif; 
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+button,input[type="submit"]{
+    cursor: pointer;
+}
+
+
+.about{
+    @include screen-lg(){
+        display: none;
+    }
+    width: 100%;
+    height: 80px;
+    background-color: 
+    #252b42;
+    color: #fff;
+    &__list{
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        font-size: 16px;
+        span{
+            margin-right: 6px;
+        }
+        a{
+            color: white;
+            margin-right: 6px;
+        }
+    }
+}
+
+#header{
+    @include screen-sm{
+        display: none;
+    }
+    margin-top: 20px;
+    margin-bottom: 50px;
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        &__head{
+        font-size: 22px;
+        color: rgb(31, 31, 31);  
+        }
+        .navbar{
+            &__list{
+                display: flex;
+                &__item{
+                    margin-right: 20px;
+                    &--link{
+                        text-decoration: none;
+                        color: rgb(31, 31, 31);  
+                    }
+                }
+            }
+        }
+        &__right{
+            color   : rgb(46, 115, 194);
+            a{
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            a{
+                color   : rgb(46, 115, 194);
+                .icon{
+                    margin-right: 14px;
+                }
+            }
+           
+        }
+    }
+
+}
+
+
+.nav-phone{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 0px 14px;
+    background-color: #252b42;
+    display: none;
+    padding: 30px;
+    *{
+        color: white;
+    }
+
+    @include screen-sm{
+        display: block;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        i{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+        
+    }
+    .navbar{
+      text-align: center;
+      .list-phone{
+        margin-top: 30px;
+        display: none;
+        transition: 1s ease-in;
+        .login{
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .bottom__area{
+            display: flex;
+            flex-direction: column;
+            a{
+                margin-bottom: 10px;
+            }
+        }
+        li{
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+      }
+    }
+}
+
+.active-bar{
+    display: block !important;
+}

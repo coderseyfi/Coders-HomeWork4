@@ -1,0 +1,35 @@
+
+
+
+//forWideComp
+@mixin screen-lg {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  
+  //forComp
+  @mixin screen-md {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+  //forTablet
+  @mixin screen-sm {
+    @media screen and (max-width: 767px)  {
+      @content;
+    }
+  }
+  
+  //forPhone
+  @mixin screen-xs {
+    @media screen and (max-width: 576px)  {
+      @content;
+    }
+  }
+
+  @mixin screen-xl {
+    @media screen and (max-width: 1600px)  {
+      @content;
+    }
+  }
